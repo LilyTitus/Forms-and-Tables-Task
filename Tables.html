@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+
+    <style>
+        th, td {
+            padding: 12px;
+            outline: 2px solid black;
+            border: 3x solid #000 !important;
+        }
+       
+        .container {
+            padding: 10px 0 0 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .container span {
+            padding: 15px;
+            margin-top: 10px;
+            display: block;
+        }
+        
+
+        .average {
+            padding: 0 2px
+        }
+
+        .container {
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>A Test table with merged cells</caption>
+        <thead>
+            <tr>
+                <th>&nbsp;</th>
+                <th class="average">Average<br>
+                    <div class="container">
+                        <span class="first">Height</span>
+                        <span class="last">Weight</span></th>
+                    </div>
+                <th>Red eyes</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>Males</td>
+                    <td>
+                        <div class="container">
+                            <span>1.9</span>
+                            <span>0.003</span>
+                        </div>
+                    </td>
+                    <td>40%</td>
+                </tr>
+                <tr>
+                    <td>Females</td>
+                    <td>
+                        <div class="container">
+                            <span class="height">1.7</span>
+                            <span class="weight">0.002</span>
+                        </div> 
+                    </td>
+                    <td>43%</td>
+                </tr>
+            </tbody>
+        </thead>
+    </table>
+</body>
+</html>

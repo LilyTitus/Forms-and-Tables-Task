@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <style>
+        div {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        div label {
+            margin-right: 10%;
+            width: 15%;
+        }
+
+        div input, div select {
+            margin: 4px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Your Address</legend>
+            <div>
+                <label>
+                    First Name
+                </label>
+                <input type="text" name="first-name" />
+            </div>
+            <div>
+                <label>
+                    Last Name
+                </label>
+                <input type="text" name="last-name" />
+            </div>
+            <div>
+                <label>
+                    Street
+                </label>
+                <input type="text" name="street" />
+            </div>
+            <div>
+                <label>
+                    City
+                </label>
+                <input type="text" name="city" />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Additional Details</legend>
+            <div>
+                <label>
+                    Biography
+                </label>
+                <textarea>
+
+                </textarea>
+            </div>
+            <div>
+                <label>
+                    Image
+                </label>
+                <input type="file" name="image" />
+            </div>
+            <div>
+                <label>Age</label>
+                <select>
+                    <option>0 - 9years</option>
+                    <option>10 - 19years</option>
+                    <option>20 - 29years</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Interests</legend>
+            <div>
+                <label>Hobbies</label>
+                <select multiple>
+                    <option value="soccer">Playing Soccer</option>
+                    <option value="dancing">Dancing</option>
+                    <option value="gardening">Gardening</option>
+                    <option value="movies">Watching Movies</option>
+                </select>
+            </div>
+            <div>
+                <label>Favorite Car</label>
+                <select>
+                    <option value="volvo">Volvo</option>
+                    <option value="bmw">BMW</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="movies">Watching Movies</option>
+                </select>
+            </div>
+            <div>
+                <label>Favorite Public Transport</label>
+                <select multiple>
+                    <option value="ground">Ground</option>
+                    <option value="train">Train</option>
+                    <option value="bus">Bus</option>
+                    <option value="water">Water</option>
+                </select>
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>
